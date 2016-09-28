@@ -1,0 +1,14 @@
+{
+  "response" : {
+    "date" : "27/09/2016",
+    "url" : "http://www.crawlsite.com",
+    "htmlAttribute" : "#htmlidOfObject",
+    "pageTitle" : "Apple",
+    "lastTime" : "26/09",
+    "contentFound" : [
+      {
+        " text" : "Texto encontrado"
+      }
+    ]
+  }
+}
