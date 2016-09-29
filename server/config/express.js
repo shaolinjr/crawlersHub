@@ -6,10 +6,22 @@ var routes    = require('../../app/routes');
 
 app.get('/crawl', function(req, res){
 
-  var crawlerUm = crawlApp.crawl("http://expressjs.com/pt-br/starter/generator.html","#gerador-de-aplicativos-do-express");
-  var crawlerDois = crawlApp.crawl("https://school.scotch.io/create-a-crud-app-with-node-and-mongodb",".learn-top.learn-section .col-sm-9 h1");
+  for (i = 0; i < 10000;i++){
+    crawlApp.crawl("http://www.arthurpires.hol.es/esf-dynamic/","#page-top" )
+    crawlApp.crawl("http://www.arthurpires.hol.es/esf-dynamic/","#page-top" )
+    crawlApp.crawl("http://www.arthurpires.hol.es/esf-dynamic/","#page-top" )
+    crawlApp.crawl("http://www.arthurpires.hol.es/esf-dynamic/","#page-top" )
+    crawlApp.crawl("http://www.arthurpires.hol.es/esf-dynamic/","#page-top" )
+    crawlApp.crawl("http://www.arthurpires.hol.es/esf-dynamic/","#page-top" )
+    crawlApp.crawl("http://www.arthurpires.hol.es/esf-dynamic/","#page-top" )
+    crawlApp.crawl("http://www.arthurpires.hol.es/esf-dynamic/","#page-top" )
+    crawlApp.crawl("http://www.arthurpires.hol.es/esf-dynamic/","#page-top" )
+    crawlApp.crawl("http://www.arthurpires.hol.es/esf-dynamic/","#page-top" )
 
-  console.log("Resultado: "+ crawlApp.getResults());
+
+  }
+
+  // console.log("Resultado: "+ crawlApp.getResults());
 
   // Finally, we'll just send out a message to the browser reminding you that this app does not have a UI.
   res.send("Checkout Terminal!!");

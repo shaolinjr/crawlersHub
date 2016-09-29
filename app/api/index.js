@@ -55,7 +55,7 @@ crawlApp.crawl = function (urlToCrawl, elementToCrawl){
 
       $(elementToCrawl).first().filter(function(){
         var data = $(this);
-        console.log(`Data text: ${data.text()}`)
+        // console.log(`Data text: ${data.text()}`)
         crawlApp.responseJSON = {
           response: {
           date: _date,
@@ -67,8 +67,8 @@ crawlApp.crawl = function (urlToCrawl, elementToCrawl){
           }]
         }
         };
-        //crawlApp.responseJSON = JSON.stringify(crawlApp.responseJSON, null, 4);
-        console.log(crawlApp.responseJSON);
+        crawlApp.responseJSON = JSON.stringify(crawlApp.responseJSON, null, 4);
+        // console.log(crawlApp.responseJSON);
       })
 
 
